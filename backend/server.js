@@ -33,8 +33,15 @@ app.use(helmet({
 
 const allowedOrigins = [
   process.env.FRONTEND_URL || 'http://localhost:5173',
-  'https://secure-bank-app-five.vercel.app',
-  'https://secure-bank-app-git-main-kasturimaheshs-projects.vercel.app',
+
+  // Production
+  'https://secure-bank-app-sigma.vercel.app',
+
+  // Git deployment
+  'https://secure-bank-app-git-main-madhavimadhu2655-pngs-projects.vercel.app',
+
+  // Preview deployment
+  'https://secure-bank-qei48wtf8-madhavimadhu2655-pngs-projects.vercel.app',
 ];
 app.use(cors({
   origin: (origin, callback) => {
