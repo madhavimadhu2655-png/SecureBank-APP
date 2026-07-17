@@ -33,7 +33,8 @@ app.use(helmet({
 
 const allowedOrigins = [
   process.env.FRONTEND_URL || 'http://localhost:5173',
-  'https://your-banking-app.vercel.app',
+  'https://secure-bank-app-five.vercel.app',
+  'https://secure-bank-app-git-main-kasturimaheshs-projects.vercel.app',
 ];
 app.use(cors({
   origin: (origin, callback) => {
